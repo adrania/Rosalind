@@ -9,7 +9,7 @@ from Bio.SubsMat import MatrixInfo as matlist
 ''Algorithm that allows to perform a global alignment between two sequences, either entered by keyboard or selected by default.''
 ''Several alignment results are displayed for the sequences. The matrix used for the alignment is Blosum64.''
 
-# Main program: 
+# Main program:
 print('Global alignment algorithm')
 ans = input('Do you want to write the sequences? (y/n): ')
 if ans == 'y':
@@ -26,4 +26,3 @@ alig = pairwise2.align.globalds(seq1, seq2, matrix_blosum, -5, -5) # Same penalt
 print('\nThe results of the global alignment are as follows: \n')
 for a in alig:
     print(format_alignment(*alig[0])) 
-    
